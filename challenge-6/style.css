@@ -13,24 +13,49 @@
     padding: 0px;
 }
 
-header::before{
+body::before{
     content: '';
-    
+    position: absolute;
 
 
-    height: 436px;
+    height: 300px;
     width: 100vw;
 
     background-color: var(--header-background);
+
+    z-index: -1;
+}
+
+header{
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 9px;
+
+    height: 250px;
+
+    color: white;
+    
 }
 main{
     display: flex;
     justify-content: center;
     
 }
+form{
+    width: 50vw;
+    background-color: white;
+    border-radius: 9px 9px 0px 0px;
+
+    padding: 4em;
+}
 
 fieldset{
-    outline: none;
+    border: none;
+    
 
     display: flex;
     flex-direction: column;
@@ -38,6 +63,10 @@ fieldset{
     gap: 20px;
 
     padding: 10px;
+}
+legend{
+    border-bottom: 1px solid gray;
+    width: 100%;
 }
 div{
     width: 100%;
