@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+:root{
+    --header-background:#535971;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header::before{
+    content: '';
+    
+
+
+    height: 436px;
+    width: 100vw;
+
+    background-color: var(--header-background);
+}
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+fieldset{
+    outline: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 10px;
+}
+div{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    
+}
+input{
+    height: 56px;
+
+    border-radius: 9px;
+}
+#email, #password, #mentor-name{
+    width: 100%;
+}
+

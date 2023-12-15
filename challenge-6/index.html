@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="page-title">
+            <h1>mentoria</h1>
+            <p>Preencha o formulário para agendar sua mentoria</p>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" required>
+                    <label for="lastName">Sobrenome</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações do mentor</legend>
+                <div>
+                    <label for="mentor-name">Nome do Mentor</label>
+                    <input type="text" id="mentor-name" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Horários disponíveis</legend>
+                <h2>Primeira Mentoria</h2>
+                <div>
+                    <label for="date">Data</label>
+                    <input type="date" id="date" required>
+
+                    <label for="start">Inicio</label>
+                    <input type="time" id="start" required>
+
+                    <label for="end">Encerra</label>
+                    <input type="time" id="end" required>
+                </div>
+                <h2>Segunda Mentoria</h2>
+                <div>
+                    <label for="second-date">Data</label>
+                    <input type="date" id="date" required>
+
+                    <label for="second-start">Inicio</label>
+                    <input type="time" id="second-start" required>
+
+                    <label for="second-end">Encerra</label>
+                    <input type="time" id="second-end" required>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Salvar">
+            </div>
+        </form>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
