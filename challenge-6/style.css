@@ -66,17 +66,28 @@ fieldset{
 }
 legend{
     border-bottom: 1px solid gray;
+    padding-bottom: 1em;
     width: 100%;
 }
-div{
+#names, .time{
     width: 100%;
     display: flex;
     gap: 10px;
     
 }
+.name-info, .date-info{
+    width: 100%;
+}
+.day{
+    width: 150%;
+}
+
+label{
+    display: block;
+}
 input{
     height: 56px;
-
+    width: 100%;
     border-radius: 9px;
 }
 #email, #password, #mentor-name{

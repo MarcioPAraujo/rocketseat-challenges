@@ -16,11 +16,15 @@
         <form>
             <fieldset>
                 <legend>Informações pessoais</legend>
-                <div>
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" required>
-                    <label for="lastName">Sobrenome</label>
-                    <input type="text" id="lastName" required>
+                <div id="names">
+                    <div class="name-info">
+                        <label for="name">Nome</label><br>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="name-info">
+                        <label for="lastName">Sobrenome</label><br>
+                        <input type="text" id="lastName" required>
+                    </div>
                 </div>
                 <div>
                     <label for="email">Email</label>
@@ -41,26 +45,38 @@
             <fieldset>
                 <legend>Horários disponíveis</legend>
                 <h2>Primeira Mentoria</h2>
-                <div>
-                    <label for="date">Data</label>
-                    <input type="date" id="date" required>
+                <div class="time">
+                    <div class="day">
+                        <label for="date">Data</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="date-info">
+                        <label for="start">Inicio</label>
+                        <input type="time" id="start" required>
+                    </div>
 
-                    <label for="start">Inicio</label>
-                    <input type="time" id="start" required>
-
-                    <label for="end">Encerra</label>
-                    <input type="time" id="end" required>
+                    <div class="date-info">
+                        <label for="end">Encerra</label>
+                        <input type="time" id="end" required>
+                    </div>
+                    
                 </div>
                 <h2>Segunda Mentoria</h2>
-                <div>
-                    <label for="second-date">Data</label>
-                    <input type="date" id="date" required>
+                <div class="time">
+                    <div class="day">
+                        <label for="second-date">Data</label>
+                        <input type="date" id="date" required>
+                    </div>
 
-                    <label for="second-start">Inicio</label>
-                    <input type="time" id="second-start" required>
+                    <div class="date-info">
+                        <label for="second-start">Inicio</label>
+                        <input type="time" id="second-start" required>
+                    </div>
 
-                    <label for="second-end">Encerra</label>
-                    <input type="time" id="second-end" required>
+                    <div class="date-info">
+                        <label for="second-end">Encerra</label>
+                        <input type="time" id="second-end" required>
+                    </div>
                 </div>
             </fieldset>
             <div>
