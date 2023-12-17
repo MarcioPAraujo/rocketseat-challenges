@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::before{
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+
+    height: 300px;
+    width: 100%;
+
+    background-color: black;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+
+}
+#avaliation-img{
+    margin-top: 1em;
+}
+h1,p{
+    color: white;
+}
