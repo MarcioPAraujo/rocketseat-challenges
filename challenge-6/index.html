@@ -13,9 +13,10 @@
     </header>
 
     <main>
-        <form>
+        <form id="mentorship-form">
             <fieldset>
                 <legend>Informações pessoais</legend>
+                <div class="line"></div>
                 <div id="names">
                     <div class="name-info">
                         <label for="name">Nome</label><br>
@@ -27,27 +28,29 @@
                     </div>
                 </div>
                 <div>
-                    <label for="email">Email</label>
+                    <label for="email">Email <span>(Digite um email válido)</span></label>
                     <input type="email" id="email" required>
                 </div>
                 <div>
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" required>
+                    <label for="password">Senha <span>(Minimo 6 caracteres)</span></label>
+                    <input type="password" id="password" minlength="6" required>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Informações do mentor</legend>
+                <div class="line"></div>
                 <div>
-                    <label for="mentor-name">Nome do Mentor</label>
+                    <label for="mentor-name">Nome do Mentor <span>(Apenas o primeiro nome)</span></label>
                     <input type="text" id="mentor-name" required>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Horários disponíveis</legend>
+                <div class="line"></div>
                 <h2>Primeira Mentoria</h2>
                 <div class="time">
                     <div class="day">
-                        <label for="date">Data</label>
+                        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
                         <input type="date" id="date" required>
                     </div>
                     <div class="date-info">
@@ -64,7 +67,7 @@
                 <h2>Segunda Mentoria</h2>
                 <div class="time">
                     <div class="day">
-                        <label for="second-date">Data</label>
+                        <label for="second-date">Data <span>(DD/MM/AAAA)</span></label>
                         <input type="date" id="date" required>
                     </div>
 
@@ -79,12 +82,14 @@
                     </div>
                 </div>
             </fieldset>
-            <div>
-                <input type="submit" value="Salvar">
-            </div>
+            
         </form>
+        <div id="button">
+            <input type="submit" value="Salvar" id="save-button" form="mentorship-form">
+        </div>
+    
     </main>
-
+   
     <footer></footer>
 </body>
 </html>
