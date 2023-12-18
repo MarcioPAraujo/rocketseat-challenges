@@ -15,7 +15,57 @@
 
     <main>
         <form>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="last-name">Sobrenome</label>
+                    <input type="text" id="last-name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+            </fieldset>
 
+
+            <fieldset>
+                <legend>Informações do mentor</legend>
+                <div>
+                    <label for="mentor">Selecione quem foi seu mentor</label>
+                    <select id="mentor">
+                        <option value="John Krammer">John Krammer</option>
+                        <option value="John Wick">John Wick</option>
+                        <option value="Bruce Wayne">Bruce Wayne</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="experience">Conten-nos como foi sua experiencia</label>
+                    <textarea id="experience"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agendando a próxima mentoria</legend>
+                <div>
+                    <label for="day">Data</label>
+                    <input type="date" id="day">
+                </div>
+                <div>
+                    <label for="time-start">Inicia</label>
+                    <input type="time" id="time-start">
+                </div>
+                <div>
+                    <label for="time-end">Encerra</label>
+                    <input type="time" id="time-end">
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Salvar" id="save-button">
+            
         </form>
     </main>
 
