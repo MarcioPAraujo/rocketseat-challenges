@@ -1,8 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+
 :root{
     --body-background:#BFD7E4;
     --pink:#F67669;
+    --input-background:#FAFAFC;
+    --border:#E6E6F0;
+
+    --poppins:'Poppins', sans-serif;
+    --staatliches:'Staatliches', sans-serif;
+    --font-color:#4E4958;
+    --legend-font-color:#253B51;
 }
 
 *{
@@ -24,6 +34,8 @@ body::before{
 }
 body{
     background-color: var(--body-background);
+    font-family: var(--poppins);
+    color: var(--font-color);
 }
 header{
     display: flex;
@@ -36,6 +48,9 @@ header{
 #avaliation-img{
     margin-top: 1em;
 }
+h1,legend{
+    font-family: var(--staatliches);
+}
 h1,p{
     color: white;
 }
@@ -46,6 +61,7 @@ h1,p{
 main{
     display: flex;
     justify-content: center;
+    margin-bottom: 3em;
 }
 
 
@@ -56,6 +72,8 @@ form{
 
     width: 60%;
     background-color: white;
+
+    border-radius: 16px 16px 16px 16px;
 }
 fieldset{
     width: 100%;
@@ -65,9 +83,33 @@ fieldset{
 }
 .legend{
     text-align: center;
+    color: var(--legend-font-color);
+    font-size: 24px;
+    padding-bottom: 6px;
+}
+.line{
+    width: 100%;
+    border: 1px solid var(--font-color);
+    margin-bottom: 2em;
+}
+label{
+    padding: 10px 10px 10px 0px;
 }
 input{
     width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--input-background);
+    border: 1px solid var(--border);
+    text-indent: 6px;
+}
+select{
+    width: 300px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--input-background);
+    border: 1px solid var(--border);
+    text-indent: 6px;
 }
 #doubt{
     width: auto;
@@ -79,13 +121,11 @@ input{
 
     color: white;
     
+    border-radius: 16px 16px 0px 0px;
     
 }
-form, #personal-info{
-    border-radius: 1em 1em 0 0;
-}
 .info{
-    padding: 1em;
+    padding: 0em 2em 2em ;
     display: flex;
     flex-direction: column;
     
@@ -104,10 +144,20 @@ form, #personal-info{
 textarea{
     width: 100%;
     height: 10em;
+    border-radius: 8px;
+    background-color: var(--input-background);
+    border: 1px solid var(--border);
 }
 #check{
+    padding-top: 1em;
     display: flex;
     gap: 1em;
+}
+#check input{
+    height: auto;
+    border-radius: 16px;
+    background-color: var(--input-background);
+    border: 1px solid var(--border);
 }
 #time{
     display: flex;
@@ -120,3 +170,14 @@ textarea{
 .hour{
     width: 90%;
 }
+.save{
+    width: 100%;
+    padding: 0em 2em 2em ;
+}
+#save-button{
+    background-color: var(--pink);
+    color: white;
+    font-family: var(--staatliches);
+    font-size: 20px;
+}
+
