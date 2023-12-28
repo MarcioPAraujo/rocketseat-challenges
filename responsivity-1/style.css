@@ -24,15 +24,48 @@ body{
 h1,h2{
     font-size: 2.8rem;
 }
-p,li,strong{
+p,li,h3{
     font-size: 1.4rem;
 }
 
 
 main{
+    max-width: 33rem;
+    margin-inline: auto;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 3.7rem;
+    align-items: flex-start;
+    padding: 3.7rem 2rem ;
+
+    box-sizing: content-box;
+}
+
+
+#description img{
+    width: 100%;
+    padding: 5rem 0rem;
+}
+#steps{
+    padding: 1.5rem;
+}
+h2,h3{
+    
+    text-indent: -1.5rem;
+}
+h2{
+    padding: 3.4rem 0rem;
+}
+h3{
+    padding-top: 2rem;
+}
+button{
+    border-radius: 0.5rem;
+    padding: 1.1rem;
+    
+
+    color: white;
+    background-color: var(--text-color);
+    border: none;
 }
 
