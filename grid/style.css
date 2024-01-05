@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,6 +7,7 @@
 }
 :root{
     font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
 
     --div-background:#202024;
     --body-background:#121214;
@@ -15,7 +18,10 @@ body{
     padding: 7.2rem 12.2rem 14rem;
     background-color: var(--body-background);
     color: white;
+    display: grid;
+    justify-content: center;
 }
+
 h1{
     font-size: 5.8rem;
     color: var(--title-color);
@@ -29,7 +35,7 @@ main{
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(3, 1fr);
 
     justify-content: center;
@@ -52,5 +58,5 @@ p{
 }
 img{
     border-radius: 0.8rem 0.8rem 0rem 0rem;
-    width: 100%;
+   
 }
