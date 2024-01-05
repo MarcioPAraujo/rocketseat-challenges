@@ -16,14 +16,16 @@
     --tag-background-color:#f5f5f5;
 }
 
+body{
+    display: grid;
+    height: 100vh;
+}
 header{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
-
-    
-    height: 8rem;
+    padding: 2rem 0rem;
 }
 a{
     font-size: 1.8rem;
@@ -61,6 +63,11 @@ main{
     grid-template-columns: repeat(3,20vw);
     justify-content: center;
     gap: 3rem;  
+
+    overflow-y: scroll;
+
+    
+
 }
 h1{
     padding: 3.2rem 0rem 0rem; 
@@ -70,6 +77,7 @@ h1{
 .image-area{
     background-color: white;
     border-radius: 0.8rem;
+    
 }
 .image-content{
     width: 100%;
@@ -93,9 +101,11 @@ div p{
 
 footer{
     text-align: center;
+    
 }
 footer p{
   padding: 2.2rem 0rem;  
   font-size: 1.3rem;
+  background-color: white;
 }
 
