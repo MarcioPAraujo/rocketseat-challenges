@@ -38,6 +38,11 @@ a{
 a:focus{
     color: var(--link-focus-color);
 }
+label{
+    opacity: 0%;
+    position: absolute;
+    overflow: hidden;
+}
 input{
     text-indent: 1rem;
 
@@ -48,7 +53,7 @@ input{
 
     background-color: var(--search-bar-background);
 }
-#john-kramer{
+#user{
     
     width: 4.2rem;
     height: 4.2rem;
@@ -86,7 +91,7 @@ h1{
 h2{
     padding: 2.2rem 2.2rem 1.2rem;
 }
-div p{
+figure p{
     display: inline-block;
     font-size: 1.1rem;
 
