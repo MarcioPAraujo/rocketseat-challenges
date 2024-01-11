@@ -167,12 +167,22 @@ footer p {
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    #main-article {
-        grid-column: 1/2;
-    }
+    
 
     #main-article p {
         line-height: 3.5rem;
     }
 
+}
+@media (min-width:1300px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0rem 2rem;
+        gap: 2rem;
+    }
+    #main-article {
+        grid-column: 1/3;
+    }
+    
 }
