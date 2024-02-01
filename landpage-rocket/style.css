@@ -125,3 +125,48 @@ footer >p{
     color: white;
     text-align: center;
 }
+
+
+@media(min-width:780px){
+    header{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 5.8rem;
+    }
+    header p{
+        font-size: 3.2rem;
+    }
+    header > div >img{
+       padding-right: 10rem;
+    }
+    #title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+
+        margin-right: 15rem;
+        
+    }
+    #purple-arrow{
+        
+        width: 5rem;
+        margin-top: 5rem;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        padding: 0rem 3rem;
+    }
+    article{
+        padding: 2rem;
+        width: 20%
+    }
+}
