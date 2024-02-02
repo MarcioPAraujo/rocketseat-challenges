@@ -46,6 +46,16 @@ h2{
 header > p{
     margin-bottom: 2rem;
 }
+#title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#purple-arrow{
+    margin-top: 2rem;
+    width: 6rem;
+    align-self: center;
+}
 #content{
     background-color: var(--purple-backgroun);
     padding: 2rem 1rem;
@@ -70,7 +80,7 @@ article p{
     padding: 1rem;
 }
 #form{
-    padding: 3rem 3rem;
+    
     background-color: var(--form-section-background-color);
 }
 form{
@@ -79,6 +89,7 @@ form{
     align-items: flex-start;
 
     width: 100%;
+    padding: 3rem 3rem;
 }
 input,textarea{
     width: 100%;
@@ -125,13 +136,16 @@ footer >p{
     color: white;
     text-align: center;
 }
+#form img{
+    display: none;
+}
 
 
 @media(min-width:780px){
     header{
         flex-direction: row-reverse;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        
     }
     h1{
         font-size: 5.8rem;
@@ -153,9 +167,10 @@ footer >p{
         
     }
     #purple-arrow{
-        
+        margin-top: 20rem;
         width: 5rem;
-        margin-top: 5rem;
+        flex-wrap: wrap;
+        
     }
 
     #content{
@@ -168,5 +183,16 @@ footer >p{
     article{
         padding: 2rem;
         width: 20%
+    }
+    #form{
+        display: flex;
+        align-items: center;
+        
+    }
+    form{
+        padding: 9rem;
+    }
+    #form img{
+        display: block;
     }
 }
