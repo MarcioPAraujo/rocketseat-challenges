@@ -71,9 +71,10 @@ input{
 
 }
 #initial-screen{
-    display: none;
+    
 }
 #result-screen button{
     border-radius: 0.3rem;
     width: 10rem;
+    display: none;
 }
