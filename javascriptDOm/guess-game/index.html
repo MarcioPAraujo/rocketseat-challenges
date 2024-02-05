@@ -12,12 +12,12 @@
             <h1>Guess the number</h1>
             <p>from 0 to 10</p>
             <form>
-                <input type="number" id="guessed-number"><button onclick="tryGuessTheNumber(event)">Try</button>
+                    <input type="number" max="10" min="0" id="guessed-number"><button id="buttonTry">Try</button>
             </form>
         </div>
-        <div id="result-screen">
+        <div id="result-screen" class="hide">
             <h1>You guessed in x tries</h1>
-            <button>Play Again</button>
+            <button id="buttonAgain">Play Again</button>
 
         </div>
     </main>
