@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    --message-background:hsl(198, 32%, 92%);
+    --button-color:hsl(35, 100%, 50%);
+    --button-color-hover: hsl(40, 100%, 60%);
+}
+
+
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(45deg, hsl(300, 100%, 05%), hsl(300, 100%, 40%));
+}
+main{
+    background-color: white;
+    color:hsl(300, 100%, 10%);
+    font-size: 1.6rem;
+
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: -1rem 1rem 3rem black;
+
+    width: 40%;
+}
+p,h1{
+    padding: 1rem;
+}
+img{
+    margin-top: 2rem;
+    
+}
+#closed img:hover{
+    cursor:pointer;
+
+    animation-name: shaking;
+    animation-duration: 0.18s;
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+#opened p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+
+    background-color: var(--message-background);
+    width: 80%;
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    margin-top: 2rem;
+
+    animation-name: showMessage;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+
+}
+#opened div{
+    width: 45%;
+}
+#opened img{
+    width: 100%;
+}
+
+ #opened button{
+    align-self: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+
+    border: none;
+    border-radius: 0.5rem;
+    background-color:var(--button-color) ;
+    color: white;
+    font-weight: 600;
+ }
+ #opened button:hover{
+    background-color:var(--button-color-hover) ;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.185);
+ }
+
+
+.hided{
+    display: none;
+    
+}
+@keyframes shaking{
+    0%{
+        transform: translateY(5%);
+    }
+    50%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(5%)
+    }
+
+}
+
+@keyframes showMessage{
+    0%{
+        scale: 0;
+        opacity: 0%;
+        transform: translateY(100%)
+    }
+    100%{
+        scale: 1;
+        opacity: 100%;
+        transform: translateY(0%);
+
+    }
+}
+
+@media (max-width:415px){
+    main{
+        margin: 5rem;
+        padding: 1rem;
+    }
+    #opened button{
+        width: 50%;
+        padding: 1rem 0.5rem;
+    }
+    #opened p{
+        width: 80%;
+    }
+    #opened div{
+        width: 70%;
+    }
+}
