@@ -1,1 +1,1 @@
-<a href="https://marcioparaujo.github.io./rocketseat-challenge/biscoito-da-sorte/">teste</a>
+<a href="https://marcioparaujo.github.io/rocketseat-challenges/">websites projects</a>
