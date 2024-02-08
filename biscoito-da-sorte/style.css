@@ -44,6 +44,7 @@ p,h1{
 }
 img{
     margin-top: 2rem;
+    width: 100%;
     
 }
 #closed img:hover{
@@ -138,8 +139,13 @@ img{
 
 @media (max-width:415px){
     main{
-        margin: 5rem;
+        width: 90%;
+        margin: 1rem;
         padding: 1rem;
+    }
+    #closed button{
+        background-color: white;
+        border: none;
     }
     #opened button{
         width: 50%;
