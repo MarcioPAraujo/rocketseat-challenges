@@ -157,15 +157,31 @@ img{
         width: 80%;
     }
     #opened div{
-        width: 70%;
+        width: 90%;
     }
 }
 @media(max-height:413px){
     main{
         height: 90%;
+        width: 70%;
         padding: 2rem;
     }
     h1{
         padding: 0rem;
+    }
+    
+    #opened img{
+        margin: 0rem;
+        width: 40%;
+    }
+    #opened div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #opened p{
+        width: 80%;
+        
     }
 }
