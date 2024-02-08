@@ -27,6 +27,8 @@ body{
     align-items: center;
 
     background-image: linear-gradient(45deg, hsl(300, 100%, 05%), hsl(300, 100%, 40%));
+
+   
 }
 main{
     background-color: white;
@@ -92,7 +94,7 @@ img{
  #opened button{
     align-self: center;
     padding: 2rem 1rem;
-    margin-top: 3rem;
+    
 
     border: none;
     border-radius: 0.5rem;
@@ -156,5 +158,14 @@ img{
     }
     #opened div{
         width: 70%;
+    }
+}
+@media(max-height:413px){
+    main{
+        height: 90%;
+        padding: 2rem;
+    }
+    h1{
+        padding: 0rem;
     }
 }
