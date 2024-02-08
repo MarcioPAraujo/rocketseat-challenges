@@ -17,10 +17,17 @@ const phrases = [
     'Success is not final, failure is not fatal: it is the courage to continue that counts.'
 ]
 let randomNumberBetween1And10 = () => Math.round(Math.random()*10)
+let randomArrayPosition
 const revealTheMessage = () =>{
     closedCookie.classList.add('hided')
     openedCookie.classList.remove('hided')
-    let randomArrayPosition = randomNumberBetween1And10()
+    
+    randomArrayPosition = randomNumberBetween1And10()
+    let arraySizeOverflow = randomArrayPosition === 10
+    if(arraySizeOverflow){
+        --randomArrayPosition
+    }
+    
     message.innerText = phrases[randomArrayPosition]
 }
 const reset = () =>{
