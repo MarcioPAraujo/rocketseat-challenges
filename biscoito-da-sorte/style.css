@@ -55,6 +55,10 @@ img{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+#closed button{
+    background-color: white;
+    border: none;
+}
  section{
     display: flex;
     flex-direction: column;
