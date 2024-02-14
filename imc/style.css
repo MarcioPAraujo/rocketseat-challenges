@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
 }
 :root{
+    font-family: "Inter", sans-serif;
     font-size: 62.5%;
     --background-page:hsl(231, 80%, 8%);
     --calculator-color:white;
     --input-background:hsl(212, 23%, 89%);
+    --green-color:194, 97%;
+    --button-color:hsl(var(--green-color), 31%);
+    --button-color-hover:hsl(var(--green-color), 61%);
 }
 body{
     background-color:var(--background-page) ;
@@ -43,13 +49,57 @@ form{
     justify-content: space-evenly;
      
 }
-input{
+button,input{
+
     width: 100%;
-    height: 5.2rem;
-    background-color: var(--input-background);
     border: none;
     border-radius: 0.4rem;
 }
+label{
+    margin: 0.5rem 0rem;
+}
+input{
+    height: 5.2rem;
+    background-color: var(--input-background);
+    text-indent: 1rem;
+}
+
+button{
+    background-color:var(--button-color) ;
+    color: var(--calculator-color);
+    font-size:2rem;
+    font-weight: bold;
+
+    margin-top: 3rem;
+    padding: 2.6rem;
+}
+button:hover{
+    background-color: var(--button-color-hover);
+    transition: 0.3s;
+    box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.37);
+    
+}
+
 .hided{
     display: none;
+}
+
+@media(max-width:920px){
+    #datas{
+        width:80% ;
+        height:70% ;
+    }
+    
+}
+@media(max-height:420px){
+    #datas{
+        width: 50%;
+        height: 90%;
+    }
+    input{
+        height: 5rem;
+    }
+    button{
+        padding: 2rem;
+    }
 }
