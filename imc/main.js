@@ -30,4 +30,5 @@ const closePopUp = ()=>{
 }
 
 buttonClose.addEventListener('click',closePopUp)
+console.log('test')
 
