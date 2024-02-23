@@ -1,4 +1,5 @@
 
 git add .
-git commit -m "$1"
+read -p 'Commit description: ' COMMIT_DESC
+git commit -m "$COMMIT_DESC"
 git push
