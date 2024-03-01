@@ -16,4 +16,14 @@ popScreen.buttonClose.onclick = ()=>{
     popScreen.closePopUp()
 }
 
+
+window.addEventListener('keydown',handleCloseKey)
+
+function handleCloseKey(event){
+    let esc = event.key === 'Escape'
+    if(esc){
+        popScreen.closePopUp()
+    }
+}
+
 export { popScreen };
