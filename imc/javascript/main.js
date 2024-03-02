@@ -13,7 +13,12 @@ function BMICalc (event){
     event.preventDefault()
     const weight = fieldWeight.value
     const height = (fieldHeight.value)/100
-    //console.log(resultScreen.innerHTML)
+    
+    const invalidValue = checkValue(weight) || checkValue(height)
+    if(invalidValue){
+        return 'One or both values might be invalid for calculation'
+    }
+
     const BMI = (weight/(height**2)).toFixed(2)
 
    popScreen.resultMessage.innerText = `your BMI ${BMI}`
@@ -22,4 +27,8 @@ function BMICalc (event){
    fieldWeight.value = ''
     
 }
-
+ 
+function checkValue(value){
+    return isNaN(value) || value === ''
+       
+}
