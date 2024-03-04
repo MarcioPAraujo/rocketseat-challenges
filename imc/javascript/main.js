@@ -15,7 +15,8 @@ function BMICalc (event){
     const height = (fieldHeight.value)/100
     
     const invalidValue = checkValue(weight) || checkValue(height)
-    if(invalidValue){
+    const invalidNumber = isNumberOutOfRange(weight,height)
+    if(invalidValue || invalidNumber){
         return 'One or both values might be invalid for calculation'
     }
 
@@ -29,6 +30,14 @@ function BMICalc (event){
 }
  
 function checkValue(value){
-    return isNaN(value) || value === ''
-       
+    return isNaN(value) || value === ''     
+}
+function isNumberOutOfRange(weight,height){
+    let tooSmall = weight <= 0 || height <= 0
+    if(tooSmall){
+        return tooSmall
+    }
+
+    let tooBig = weight > 250 || height > 2.20
+    return tooBig
 }
