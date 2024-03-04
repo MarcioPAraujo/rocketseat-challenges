@@ -143,6 +143,12 @@ main >div{
     background-color: var(--error-bckgnd);
     font-size: 1.6rem;
     padding: calc(3.6rem - 1.6rem);
+/*
+    animation-name: errorApear;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    */
 }
 
 @media(max-width:920px){
@@ -170,5 +176,17 @@ main >div{
     }
     form button{
         padding: 2rem;
+    }
+}
+@keyframes errorApear {
+    0%{
+        transform: translateY(-60px);
+    }
+    50%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
     }
 }
