@@ -18,7 +18,8 @@ function BMICalc (event){
     
     const invalidValue = checkValue(weight) || checkValue(height)
     const invalidNumber = isNumberOutOfRange(weight,height)
-    if(invalidValue || invalidNumber){
+    const invalidData = invalidValue || invalidNumber
+    if(invalidData){
         const message = 'One or both values might be invalid for calculation'
         errorMessage.showError(message)
         return;
@@ -27,11 +28,8 @@ function BMICalc (event){
     }else{
         errorMessage.hideError()
         const BMI = (weight/(height**2)).toFixed(2)
-
-        popScreen.resultMessage.innerText = `your BMI ${BMI}`
-        popScreen.showBMI()
-        fieldHeight.value = ''
-        fieldWeight.value = ''
+        showResultMessage(BMI)
+        
     }
 }
  
@@ -47,3 +45,17 @@ function isNumberOutOfRange(weight,height){
     let tooBig = weight > 250 || height > 2.20
     return tooBig
 }
+function showResultMessage(BMI){
+    popScreen.resultMessage.innerText = `your BMI ${BMI}`
+    popScreen.showBMI()
+    fieldHeight.value = ''
+    fieldWeight.value = ''
+}
+
+
+const hideErrorMessage = () =>{
+    errorMessage.hideError()
+}
+
+fieldHeight = addEventListener('input',hideErrorMessage)
+fieldWeight = addEventListener('input',hideErrorMessage)
