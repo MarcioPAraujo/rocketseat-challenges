@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --butons-background:#242424;
+}
+
+body{
+    /*background-color: black;
+    color: white;*/
+    height: 100vh;
+    display: grid;
+    place-items:center;
+}
+#theme-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    padding: 4rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 9.6rem;
+    
+
+}
+#buttons{
+    background-color:var(--butons-background) ;
+/*    display: flex;
+    justify-content: space-around;*/
+
+    padding: 2rem;
+    border-radius: 9.9rem;
+
+}
+#buttons img{
+    margin: 0rem 2rem;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
