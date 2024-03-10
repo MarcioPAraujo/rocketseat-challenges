@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="playing music-on">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="watch to keep you doing what must be done">
     <title>focus timer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body>
-    <main>
-        <img id ="theme-button" src="images/ph_moon-bold.png" alt="theme icon" >
+<body class="dark-mode">
+    <main >
+        <button id="theme-button"class="ph-fill ph-sun-dim"></button>
+        <!-- <i class="ph-fill ph-moon"></i> -->
         <h1>00:00</h1>
-        <div id="buttons">
-            <img src="images/ph_play-circle.svg" alt="">
-            <img src="images/ph_stop-circle.png" alt="">
-            <img src="images/ph_speaker-high.svg" alt="">
+        <div id="controlls">
+            <button class="ph-fill ph-play timer-button primary" ></button>
+            <button class="ph-fill ph-pause timer-button secondary"></button>
+            <button class="ph-fill ph-stop timer-button secondary"></button>
+            <button class="ph-fill ph-timer timer-button primary"></button>
+            <button class="ph-fill ph-speaker-none timer-button secondary"></button>
+            <button class="ph-fill ph-speaker-high timer-button primary"></button>
         </div>
     </main>
 

@@ -5,7 +5,19 @@
 }
 :root{
     font-size: 62.5%;
-    --butons-background:#242424;
+    --controlls-background:hsl(34, 100%, 0%);
+    --primary-color:hsl(94,100%,50%);
+    --secondary-color: hsl(94,10%,50%);
+   
+    
+}
+.dark-mode{
+    --controlls-background:hsl(10, 10%, 10%);
+    background-color: black;
+    color: white;
+}
+.dark-mode #theme-button{
+    color: white;
 }
 
 body{
@@ -15,12 +27,15 @@ body{
     display: grid;
     place-items:center;
 }
+
 #theme-button{
     position: absolute;
+    font-size: 3.2rem;
     top: 0px;
     right: 0px;
 
     padding: 4rem;
+    color: black;
 }
 main{
     display: flex;
@@ -33,20 +48,41 @@ h1{
     
 
 }
-#buttons{
-    background-color:var(--butons-background) ;
-/*    display: flex;
-    justify-content: space-around;*/
+#controlls{
+    background-color:var(--controlls-background) ;
+    display: flex;
+    justify-content: space-between;
 
     padding: 2rem;
     border-radius: 9.9rem;
 
 }
-#buttons img{
-    margin: 0rem 2rem;
+#controlls button{
+    margin: 0rem 2rem
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer; 
+}
+.timer-button{
+    font-size: 6.4rem;
+}
+.primary{
+    color: var(--primary-color);
+}
+.secondary{
+    color: var(--secondary-color);
 }
 
-.dark{
-    background-color: black;
-    color: white;
+
+
+
+.playing .ph-play,
+.playing .ph-timer,
+.music-on .ph-speaker-none,
+html:not(.playing) .ph-pause,
+html:not(.playing) .ph-stop,
+html:not(.music-on) .ph-speaker-high{
+    display: none;
 }
