@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="playing music-on">
+<html lang="en" class="playing dark-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body class="dark-mode">
+<body >
     <main >
-        <button id="theme-button"class="ph-fill ph-sun-dim"></button>
-        <!-- <i class="ph-fill ph-moon"></i> -->
+        <button id="theme-button">
+            <abbr title="light mode"><i class="ph-fill ph-sun-dim"></i></abbr>
+            <abbr title="dark mode"><i class="ph-fill ph-moon"></i></abbr>
+            <span class="screen-reader">ativar e desativardark mode</span>
+        </button>
         <h1>00:00</h1>
         <div id="controlls">
-            <button class="ph-fill ph-play timer-button primary" ></button>
-            <button class="ph-fill ph-pause timer-button secondary"></button>
-            <button class="ph-fill ph-stop timer-button secondary"></button>
-            <button class="ph-fill ph-timer timer-button primary"></button>
-            <button class="ph-fill ph-speaker-none timer-button secondary"></button>
-            <button class="ph-fill ph-speaker-high timer-button primary"></button>
+            <button  >
+                <abbr title="timer play"><i class="ph-fill ph-play timer-button primary"></i></abbr>
+                <span class="screen-reader">play</span>
+            </button>
+            <button >
+                <abbr title="pause"><i class="ph-fill ph-pause timer-button secondary"></i></abbr>
+                <span class="screen-reader">pause</span>
+            </button>
+            <button >
+                <abbr title="play time"><i class="ph-fill ph-stop timer-button secondary"></i></abbr>
+                <span class="screen-reader">play time button</span>
+            </button>
+            <button >
+                <abbr title="counter"><i class="ph-fill ph-timer timer-button primary"></i></abbr>
+                <span class="screen-reader">play timer</span>
+            </button>
+            <button >
+                <abbr title="mute"><i class="ph-fill ph-speaker-none timer-button secondary"></i></abbr>
+                <span class="screen-reader">mute button</span>
+            </button>
+            <button >
+                <abbr title="play song"><i class="ph-fill ph-speaker-high timer-button primary"></i></abbr>
+                <span class="screen-reader">play song button</span>
+            </button>
         </div>
     </main>
 
 
-    <script src="main.js"></script>
+    <script type="module" src="javascript/main.js"></script>
 </body>
 </html>

@@ -19,6 +19,15 @@
 .dark-mode #theme-button{
     color: white;
 }
+.screen-reader{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    appearance: none;
+}
 
 body{
     /*background-color: black;
@@ -43,6 +52,9 @@ main{
     justify-content: center;
     align-items: center;
 }
+abbr{
+    text-decoration: none;
+}
 h1{
     font-size: 9.6rem;
     
@@ -52,14 +64,12 @@ h1{
     background-color:var(--controlls-background) ;
     display: flex;
     justify-content: space-between;
-
+   
     padding: 2rem;
     border-radius: 9.9rem;
 
 }
-#controlls button{
-    margin: 0rem 2rem
-}
+
 button{
     border: none;
     background-color: transparent;
@@ -83,6 +93,8 @@ button{
 .music-on .ph-speaker-none,
 html:not(.playing) .ph-pause,
 html:not(.playing) .ph-stop,
-html:not(.music-on) .ph-speaker-high{
+html:not(.music-on) .ph-speaker-high,
+html:not(.dark-mode) .ph-sun-dim,
+.dark-mode .ph-moon{
     display: none;
 }
