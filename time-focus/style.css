@@ -60,7 +60,7 @@ h1{
     
 
 }
-#controlls{
+#controls{
     background-color:var(--controlls-background) ;
     display: flex;
     justify-content: space-between;
@@ -88,11 +88,11 @@ button{
 
 
 
-.playing .ph-play,
-.playing .ph-timer,
+.running .ph-play,
+.running .ph-timer,
 .music-on .ph-speaker-none,
-html:not(.playing) .ph-pause,
-html:not(.playing) .ph-stop,
+html:not(.running) .ph-pause,
+html:not(.running) .ph-stop,
 html:not(.music-on) .ph-speaker-high,
 html:not(.dark-mode) .ph-sun-dim,
 .dark-mode .ph-moon{

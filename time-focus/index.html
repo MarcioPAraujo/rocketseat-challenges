@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="playing dark-mode">
+<html lang="en" class="running music-on dark-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,31 +16,37 @@
             <span class="screen-reader">ativar e desativardark mode</span>
         </button>
         <h1>00:00</h1>
-        <div id="controlls">
-            <button  >
-                <abbr title="timer play"><i class="ph-fill ph-play timer-button primary"></i></abbr>
-                <span class="screen-reader">play</span>
-            </button>
-            <button >
-                <abbr title="pause"><i class="ph-fill ph-pause timer-button secondary"></i></abbr>
-                <span class="screen-reader">pause</span>
-            </button>
-            <button >
-                <abbr title="play time"><i class="ph-fill ph-stop timer-button secondary"></i></abbr>
-                <span class="screen-reader">play time button</span>
-            </button>
-            <button >
-                <abbr title="counter"><i class="ph-fill ph-timer timer-button primary"></i></abbr>
-                <span class="screen-reader">play timer</span>
-            </button>
-            <button >
-                <abbr title="mute"><i class="ph-fill ph-speaker-none timer-button secondary"></i></abbr>
-                <span class="screen-reader">mute button</span>
-            </button>
-            <button >
-                <abbr title="play song"><i class="ph-fill ph-speaker-high timer-button primary"></i></abbr>
-                <span class="screen-reader">play song button</span>
-            </button>
+        <div id="controls">
+            <abbr title="timer play">
+                <button  data-action="toggleRunning" class="ph-fill ph-play timer-button primary">
+                    <span class="screen-reader">play</span>
+                </button>
+            </abbr>
+            <abbr title="pause">
+                <button data-action="toggleRunning" class="ph-fill ph-pause timer-button secondary">
+                    <span class="screen-reader">pause</span>
+                </button>
+            </abbr>
+            <abbr title="play time">
+                <button data-action="reset" class="ph-fill ph-stop timer-button secondary">
+                    <span class="screen-reader">play time button</span>
+                </button>
+            </abbr>
+            <abbr title="counter">
+                <button data-action="set" class="ph-fill ph-timer timer-button primary">
+                    <span class="screen-reader">play timer</span>
+                </button>
+            </abbr>
+            <abbr title="mute">
+                <button data-action="toggleMusic" class="ph-fill ph-speaker-none timer-button secondary">
+                    <span class="screen-reader">mute button</span>
+                </button>
+            </abbr>
+            <abbr title="play song">
+                <button data-action="toggleMusic"  class="ph-fill ph-speaker-high timer-button primary">
+                    <span class="screen-reader">play song button</span>
+                </button>
+            </abbr>
         </div>
     </main>
 

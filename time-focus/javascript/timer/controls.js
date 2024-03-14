@@ -1,0 +1,1 @@
+export let controls = document.getElementById('controls')
