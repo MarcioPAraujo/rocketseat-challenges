@@ -1,8 +1,13 @@
 import { controls } from "./controls.js";
+import * as action from "./actions.js";
 
 export function getButton (){
     controls.addEventListener('click',(event)=>{
-      let action = event.target.dataset.action
-      console.log(action)
+      let act = event.target.dataset.action
+      if(typeof action[act]() !== "function"){
+        
+        return
+      }
+      action[act]()
     })
 }
