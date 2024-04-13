@@ -1,12 +1,14 @@
 import state from "./state.js";
 import * as events from "./events.js"
-import * as timer from "./time.js"
+import * as timer from "./timeCounter.js"
 
 export function start(minute,seconds){
     state.minutes = minute
     state.seconds = seconds
     
-    timer.updateDisplay(9,8)
+    timer.updateDisplay(0,8)
 
     events.getButton()
+
+    events.setMinutes()
 }
