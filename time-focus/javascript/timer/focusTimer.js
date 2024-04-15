@@ -6,7 +6,7 @@ export function start(minute,seconds){
     state.minutes = minute
     state.seconds = seconds
     
-    timer.updateDisplay(0,7)
+    timer.updateDisplay(0,0)
 
     events.getButton()
 
