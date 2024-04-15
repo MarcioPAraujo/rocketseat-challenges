@@ -1,10 +1,11 @@
 import state from "./state.js";
 import * as elements from "./controls.js"
 import * as action from "./actions.js"
-
+import * as sounds from './sounds.js'
 
 export function countDown(){
     //stop condition is activated by a click button
+    clearTimeout(state.countDown)
     if(!state.isRuning){
         return
     }
@@ -21,10 +22,11 @@ export function countDown(){
    
     if(minutes<0){
         action.reset()
+        sounds.music.pause()
         return
     }
     updateDisplay(minutes,seconds)
-    setTimeout(()=>{countDown()},1000)
+    state.countDown = setTimeout(()=>{countDown()},1000)
 
 }
 
