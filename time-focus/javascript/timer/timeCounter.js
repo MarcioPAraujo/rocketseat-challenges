@@ -22,7 +22,6 @@ export function countDown(){
    
     if(minutes<0){
         action.reset()
-        sounds.music.pause()
         return
     }
     updateDisplay(minutes,seconds)
