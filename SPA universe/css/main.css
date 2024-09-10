@@ -1,0 +1,43 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/universe-images/arnaud-mariat-OMj98kMI2dE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header{
+    padding: 2rem;
+
+    display: flex;
+    gap: 1rem;
+}
+header > img{
+    margin-right: 2rem;
+    filter: invert(100%);
+}
+nav{
+    display: flex;
+    align-self: center;
+
+    gap: 10rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a:focus{
+    font-weight: bold;
+}
